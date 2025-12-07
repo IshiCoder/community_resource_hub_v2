@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Submit Resource - Community Resource Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-inner container">
+    <div class="brand">Community Resource Hub</div>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="submit.html">Add resource</a>
+  </div>
+</nav>
+
+<header class="header-hero">
+  <div class="container">
+    <h1>Suggest a new resource</h1>
+    <p>Send us a resource to add to the directory. Submissions are stored in your browser so the team can review later.</p>
+  </div>
+</header>
+
+<main class="container" style="padding-top:18px">
+  <div class="card" style="max-width:800px;margin:auto">
+    <form id="submit-form">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+        <input id="name" class="input" placeholder="Resource name" required>
+        <input id="category" class="input" placeholder="Category (e.g. Food, Education)" required>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+        <input id="location" class="input" placeholder="Location or neighborhood" required>
+        <input id="contact" class="input" placeholder="Phone or email (optional)">
+      </div>
+      <div style="margin-bottom:8px">
+        <textarea id="description" class="input" rows="4" placeholder="Short description" required style="width:100%"></textarea>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button type="submit" class="primary">Submit</button>
+        <button type="button" id="submit-clear" class="input">Clear</button>
+      </div>
+    </form>
+
+    <p id="submit-message" style="display:none;margin-top:12px">Thanks — suggestion saved locally. Team members can review and approve.</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

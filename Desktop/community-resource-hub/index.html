@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Community Resource Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner container">
+    <div class="brand">Community Resource Hub</div>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="submit.html">Add resource</a>
+  </div>
+</nav>
+
+<header class="header-hero">
+  <div class="container">
+    <h1>Find local support, events, and services</h1>
+    <p>Search the directory or browse featured groups, nonprofits, and local programs.</p>
+  </div>
+</header>
+
+<main class="container" id="main">
+  <section class="card" style="margin-top:18px">
+    <div class="kicker">Featured</div>
+    <div id="featured" class="grid cols-3 featured-row"></div>
+  </section>
+
+  <section style="margin-top:18px">
+    <div class="card">
+      <div class="kicker">Community board</div>
+      <p style="margin-top:0">Local announcements and events posted by residents. Posts are saved in your browser.</p>
+
+      <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+        <input id="post-title" class="input" placeholder="Event title, e.g. 'Free tutoring - Saturdays'">
+        <input id="post-date" class="input" type="date" style="max-width:160px">
+        <button id="post-btn" class="small primary">Post</button>
+      </div>
+
+      <div id="posts" class="grid"></div>
+    </div>
+  </section>
+
+  <section style="margin-top:18px" class="card">
+    <div class="kicker">Quick links</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a class="small" href="resources.html"><button class="input">Browse all resources</button></a>
+      <a class="small" href="submit.html"><button class="input">Suggest a resource</button></a>
+      <button id="export-json" class="input">Export directory (JSON)</button>
+    </div>
+  </section>
+
+  <div class="footer">Built for TSA webmasters, demo site. Data stored locally in your browser where applicable.</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
